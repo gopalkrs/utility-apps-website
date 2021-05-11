@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/RGB-HEX Convertor</title>
+    <script src="/hexconvertor.js"></script>
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Utility Apps</h1>
+        <h1 class="sub-title">RGB-HEX Converters</h1>
+    </header>
+    <h2 class="type-converter" id="rgbtohex">RGB to HEX</h2>
+    <div class="rgbdesign">
+       
+        <label for="redv">Red : </label>
+        <input type="text" class="red-val" placeholder="255" size="10">
+        <label for="greenv">Green : </label>
+        <input type="text" class="green-val" placeholder="255" size="10">
+        <label for="bluev">Blue : </label>
+        <input type="text" class="blue-val" placeholder="255" size="10"> 
+        <button class="color-converter" id="rgb-hex">ConvertToHex</button>
+        <button class="reset color-converter">Reset</button>
+        <button class="color-converter"><a href="#hextorgb" class="swap-link">Swap</a></button>
+        <p>The following value corresponds to <span id="hex-value"></span></p>
+        <div id="change-col"></div>
+        <hr>
+        <h3>What does this RGB to Hex converter do?</h3><br>
+        <p>
+            It takes input in the form of values for Red, Green and Blue ranging from 0 to 255 and 
+            then converts those values to a hexadecimal string that can be used to specify color in html/css code. 
+            Photo editing software usually represents color in RGB and therefore if you would like to use the colors you use
+            in your photo editing software as the background of your html element then you will have to get the hexadecimal 
+            representation of the RGB values. This tool allows you to get those values.
+        </p>
+    </div>
+    <h2 id="hextorgb" class="type-converter">HEX To RGB</h2>
+    <div class="hexdesign">
+        <label for="hexa">Enter the Hex Value</label>
+        <input type=text id="hexa" placeholder="#000000">
+        <button class="color-converter" id="hex-rgb">ConvertToRGB</button>
+        <button class="reset color-converter">Reset</button>
+        <button class="color-converter"><a class="swap-link" href="#rgbtohex">Swap</a></button>
+        <p>RGB value is : <span id="red-res"></span> </p>
+        <div id="color-chg"></div>
+        <hr>
+        <h3>What does this Hex to RGB converter do?</h3><br>
+        <p>
+            It takes input in the form of a hex color code value and converts that value
+            to a RGB value that can be used to specify color in photo editing software. 
+            Photo editing software usually represents color in RGB and therefore if you would
+            like to use the same colors that you use in your html pages in your photo editing
+            software you will need the RGB values for the hex code. This tool allows you to get those values.
+        </p>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/Unit converter/Length Converter</title>
+    <script src="unit.js"></script>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <a class="unit" href="unitconvertors.html">Length</a>
+            <a class="unit" href="currencyconverter.html">Currency</a>
+            <a class="unit" href="areaconverter.html">Area</a>
+            <a></a>
+        </nav>
+        <h1 class="main-title">Utility Apps</h1>
+        <h1 class="sub-title">Unit Converters</h1>
+    </header>
+    <h2 class= "type-converter">Length Convertor</h2>
+    <div class="design-unit">
+        <label for="from-length">From : </label>
+        <select id="from-length">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="mile">Miles</option>
+            <option value="feets">Feets</option>
+            <option value="inches">Inches</option>
+        </select>
+        <label for="to-length">To :   </label>
+        <select id="to-length">
+            <option value="Meters">Meter</option>
+            <option value="Kilometers">Kilometer</option>
+            <option value="Centimeters">Centimeter</option>
+            <option value="Miles">Miles</option>
+            <option value="Feets">Feets</option>
+            <option value="Inches">Inches</option>
+        </select>
+        <br><br>
+        <label for="inputVal">Enter the value : </label>
+        <input id="inputVal" type="text">
+        <button id="convertbtn">Convert</button><br><br>
+        <label for="resVal">Converted value : </label>
+        <input id="resVal" type="text"><span id="units">  </span>
+
+    </div>
+    
+</body>
+</html>

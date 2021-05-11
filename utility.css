@@ -1,0 +1,235 @@
+* {
+    background-color: #f2e6ff;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 0 0;
+    color: #404040;
+}
+h2 {
+    color: black;
+}
+#change-col,#color-chg {
+    width: 300px;
+    height: 80px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+#hex-value,#red-res {
+    background-color: azure;
+    font-size: large;
+}
+.rgbdesign {
+    border: 1px solid black;
+    margin: 70px;
+    padding: 30px;
+    background-color: azure;
+}
+.hexdesign {
+    border: 1px solid black;
+    margin: 70px;
+    padding: 30px;
+    background-color: azure;
+}
+
+h2,p,#units,#cur,h3 {
+    background-color: rgba(255, 255, 255, 0);
+
+}
+.sub-title {
+    margin-left: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 35px;
+    margin-top: 20px;
+    color: azure;
+}
+button {
+    border-radius: 10px;
+    background-color: #4d79ff;
+    font-size: 15px;
+    padding: 5px;
+    color: #404040;
+    font-weight: bold;
+    margin: 5px;
+    width: 80px;
+}
+button:active{
+    color: black;
+}
+input {
+    background-color: azure;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+p {
+    color: #404040;
+}
+
+a {
+    background-color: azure;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+}
+.design-unit {
+    border: 1px solid #ffcccc;
+    margin: 70px;
+    padding: 20px;
+    background-color: azure;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    background-color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    margin:10px;
+} 
+option,select {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 15px;
+    background-color: #8080ff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navigator {
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+    padding-right: 20px;
+}
+header {
+    background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.type-converter {
+    width: 200px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: underline;
+
+}
+.unit {
+    margin: 0 px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.main-title {
+    margin-left: 30px;
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+.landing-page {
+    width: 350px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+}
+.landing-page-btn {
+    width: 250px;
+    background-color: azure;
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+.landing-page-container {
+    width: 700px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: azure;
+}
+.landing-page-btn-cntr {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+}
+.btn-text {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    color: #404040;
+}
+.landing-page-btn:hover {
+    background-color: #b366ff;
+}
+.btn-text:active {
+    color: black;
+}
+input:focus {
+    background-color:#e6e6ff;
+}
+.connect-me{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 5px;
+}
+.about-me {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    color:#404040
+}
+.fa {
+    color: #404044;
+}
+textarea {
+    resize: none;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: azure;
+}
+.string-utilities-block {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: azure;
+    padding: 20px;
+}
+.text-tools-btn {
+    border-radius: 10px;
+    background-color: #4d79ff;
+    font-size: 15px;
+    padding: 5px;
+    color: #404040;
+    font-weight: bold;
+    margin: 5px;
+    width: 200px;
+}
+.color-converter {
+    width: 120px;
+}
+.swap-link {
+    background-color: rgba(255, 255, 255, 0);
+    color: #404040;
+}
+.swap-link:active {
+    color: black;
+}
+.enc-dec-container1 {
+    border: 1px solid black;
+    margin: 60px;
+    background-color: azure;
+    padding: 20px;
+
+}
+.enc-dec-container2 {
+    border: 1px solid black;
+    margin: 60px;
+    background-color: azure;
+    padding: 20px;
+}
+.enc-dec-container3 {
+    border: 1px solid black;
+    margin: 60px;
+    background-color: azure;
+    padding: 20px;
+}
+.sub-type {
+    width: 500px;
+    margin: 10px auto;
+}

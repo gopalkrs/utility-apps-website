@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/Unit converter/Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="utility.css">
+    <script src="currency.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <a class="unit" href="unitconvertors.html">Length</a>
+            <a class="unit" href="currencyconverter.html">Currency</a>
+            <a class="unit" href="areaconverter.html">Area</a>
+            <a></a>
+        </nav>
+        <h1 class="main-title">Utility Apps</h1>
+        <h1 class="sub-title">Unit Converters</h1>
+    </header>
+    <h2 class= "type-converter">Currency Convertor</h2>
+    <div class="design-unit">
+        <label for="from-cur">From : </label>
+    <select id="from-cur">
+        <option value="inr">Indian(INR)</option>
+        <option value="usd">United States(USD)</option>
+        <option value="eur">Euro(EUR)</option>
+        <option value="yen">Japanese(YEN)</option>
+        <option value="chf">Swiss Franc(CHF)</option>
+        <option value="dir">Emirati(Dirham)</option>
+    </select>
+    <label for="to-cur">To : </label>
+    <select id="to-cur">
+        <option value="INR">Indian(INR)</option>
+        <option value="USD">United States(USD)</option>
+        <option value="EUR">Euro(EUR)</option>
+        <option value="YEN">Japanese(YEN)</option>
+        <option value="CHF">Swiss Franc(CHF)</option>
+        <option value="DIR">Emirati(Dirham)</option>
+    </select>
+    <br><br>
+        <label for="inputVal">Enter the value : </label>
+        <input id="inputVal" type="text">
+        <button id="convertbtn">Convert</button><br><br>
+        <label for="resVal">Converted value : </label>
+        <input id="resVal" type="text"><span id="cur">  </span>
+    </div>
+</body>
+</html>
