@@ -1,8 +1,8 @@
 * {
-    background-color:#f6dcbf;
+    background-color:#fafaf6;
     font-family: 'Archivo Narrow', sans-serif;
     margin: 0 0;
-    color: #21094e;
+    color: #272e4f;
 }
 h2 {
     color: #21094e;
@@ -14,20 +14,20 @@ h2 {
     margin-bottom: 20px;
 }
 #hex-value,#red-res {
-    background-color: azure;
+    background-color: rgba(255, 255, 255, 0);
     font-size: large;
 }
 .rgbdesign {
     border: 1px solid black;
     margin: 70px;
     padding: 30px;
-    background-color: #cc9b6d;
+    background-color: #00fff0;
 }
 .hexdesign {
     border: 1px solid black;
     margin: 70px;
     padding: 30px;
-    background-color: #cc9b6d;
+    background-color: #00fff0;
 }
 
 h2,p,#units,#cur,h3 {
@@ -39,22 +39,26 @@ h2,p,#units,#cur,h3 {
     background-color: rgba(255, 255, 255, 0);
     font-size: 35px;
     margin-top: 20px;
-    color: #21094e;
+    color: #00d1ff;
     display: flex;
     justify-content: center;
 }
 button {
     border-radius: 10px;
-    background-color: #21094e;
+    background-color: #3d6cb9;
     font-size: 15px;
     padding: 5px;
-    color: #cfeed1;
+    color: #fafaf6;
     font-weight: bold;
     margin: 5px;
     width: 80px;
 }
 button:active{
     color: black;
+}
+button:hover{
+    background-color: #cfeed1;
+    color: #272e4f;
 }
 input {
     background-color: #cfeed1;
@@ -67,7 +71,7 @@ p {
 }
 
 a {
-    background-color: #cfeed1;
+    background-color: #fafaf6;
     font-size: medium;
     color: #21094e;
     text-decoration: none;
@@ -76,13 +80,13 @@ a {
     border: 1px solid black;
     margin: 70px;
     padding: 20px;
-    background-color: #cc9b6d;
+    background-color: #00fff0;
     width:500px;
     margin-left: auto;
     margin-right: auto;
 }
 label {
-    background-color: #cc9b6d;
+    background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
     font-size: 20px;
     margin:10px;
@@ -90,15 +94,15 @@ label {
 option,select {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 15px;
-    background-color: #cfeed1;
+    background-color: #fafaf6;
     padding: 5px;
     border-radius: 10px;
 }
 option:hover {
-    background-color: #e1701a;
+    background-color: #00d1ff;
 }
 select:focus {
-    background-color: #aaaaaa;
+    background-color: #fafaf6;
 }
 .navigator {
     text-align: right;
@@ -108,7 +112,7 @@ select:focus {
     padding-right: 20px;
 }
 header {
-    background-color: #e1701a;
+    background-color: #3d6cb9;
     height: 250px;
     padding-top: 30px;
     font-size: 90px;
@@ -130,7 +134,7 @@ header {
     margin-left: 30px;
     font-size: 80px;
     background-color: rgba(255, 255, 255, 0);
-    color: #CFEED1;
+    color: #fafaf6;
     display: flex;
     justify-content: center;
 }
@@ -141,39 +145,43 @@ header {
     font-size: 30px;
 }
 .landing-page-btn {
-    width: 250px;
-    background-color:#21094e;
+    width: 300px;
+    height: 120px;
+    background-color:#3d6cb9;
     font-size: 25px;
     margin: 10px auto;
     padding: 5px;
     border-radius: 10px;
-    color: cfeed1;
+    color: #fafaf6;
 }
 .landing-page-container {
-    width: 700px;
-    border: 1px solid black;
+    width: 900px;
+    border-radius: 5px;
     margin: 0 auto;
-    background-color: #cc9b6d;
+    background-color: #f2f2f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
-.landing-page-btn-cntr {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #cc9b6d;
-}
+
+
 .btn-text {
     background-color: rgba(255, 255, 255, 0);
     font-size: 20px;
-    color: #cfeed1;
+    color: #fafaf6;
+}
+.btn-text:hover {
+    color: #272e4f;
 }
 .landing-page-btn:hover {
-    background-color: #e1701a;
+    background-color: #cfeed1;
 }
 .btn-text:active {
     color: black;
 }
 input:focus {
-    background-color:#aaaaaa;
+    background-color:#fafaf6;
 }
 .connect-me{
     background-color: rgba(255, 255, 255, 0);
@@ -185,7 +193,7 @@ input:focus {
     color:#21094e;
 }
 .fa {
-    color: #21094e;
+    color: #272e4f;
 }
 textarea {
     resize: none;
@@ -194,31 +202,36 @@ textarea {
     background-color: #CFEED1;
 }
 textarea:focus {
-    background-color: #aaaaaa;
+    background-color: #fafaf6;
 }
 .string-utilities-block {
     width: 500px;
     margin: 20px auto;
     border: 1px solid black;
-    background-color: #cc9b6d;;
+    background-color: #00fff0;
     padding: 20px;
 }
 .text-tools-btn {
     border-radius: 10px;
-    background-color: #21094e;
+    background-color: #3d6cb9;
     font-size: 15px;
     padding: 5px;
-    color: #cfeed1;
+    color: #fafaf6;
     font-weight: bold;
     margin: 5px;
     width: 200px;
 }
 .color-converter {
     width: 120px;
+    color: #fafaf6;
+}
+.color-converter:hover {
+    background-color: #cfeed1;
+    color: #272e4f;
 }
 .swap-link {
     background-color: rgba(255, 255, 255, 0);
-    color: #21094e;
+    color: #fafaf6;
 }
 .swap-link:active {
     color: black;
