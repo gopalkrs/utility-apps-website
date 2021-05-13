@@ -19,7 +19,7 @@ window.onload=()=>{
 
     let wordcount=(str)=>{
         let count=0;
-        if(str){
+        while(str){
             for(let i=0;i<str.length;i++){
                 if((str[i]===" ")||(str[i]===".")||(str[i]===",")||(str[i]==="/")||(str[i]==="?")||(str[i]===":")||(str[i]==="+")) {
                     count++;

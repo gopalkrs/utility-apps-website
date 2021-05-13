@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/RGB-HEX Convertor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
     <script src="/hexconvertor.js"></script>
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -24,7 +26,7 @@
         <input type="text" class="blue-val" placeholder="255" size="10"> 
         <button class="color-converter" id="rgb-hex">ConvertToHex</button>
         <button class="reset color-converter">Reset</button>
-        <button class="color-converter"><a href="#hextorgb" class="swap-link">Swap</a></button>
+        <button class="color-converter" onclick="window.location.href='#hextorgb'">Swap</button>
         <p>The following value corresponds to <span id="hex-value"></span></p>
         <div id="change-col"></div>
         <hr>
@@ -43,7 +45,7 @@
         <input type=text id="hexa" placeholder="#000000">
         <button class="color-converter" id="hex-rgb">ConvertToRGB</button>
         <button class="reset color-converter">Reset</button>
-        <button class="color-converter"><a class="swap-link" href="#rgbtohex">Swap</a></button>
+        <button class="color-converter" onclick="window.location.href='#rgbtohex'">Swap</button>
         <p>RGB value is : <span id="red-res"></span> </p>
         <div id="color-chg"></div>
         <hr>
