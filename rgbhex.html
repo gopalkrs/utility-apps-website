@@ -15,18 +15,26 @@
         <h1 class="main-title">Utility Apps</h1>
         <h1 class="sub-title">RGB-HEX Converters</h1>
     </header>
+    <ul>
+        <a href="unitconvertors.html"><li>Unit Converters</li></a>
+        <a href="dateconvertor.html"><li>Timestamp Converters</li></a>
+        <a href="rgbhex.html"><li>HEX-RGB Converters</li></a>
+        <a href="stringutility.html"><li>String Utilities</li></a>
+        <a href="numberbase.html"><li>Number Base Converters</li></a>
+        <a href=""><li>Encoder/Decoders</li></a>
+    </ul>
     <h2 class="type-converter" id="rgbtohex">RGB to HEX</h2>
     <div class="rgbdesign">
        
         <label for="redv">Red : </label>
-        <input type="text" class="red-val" placeholder="255" size="10">
+        <input type="text" class="red-val" placeholder="255" size="3">
         <label for="greenv">Green : </label>
-        <input type="text" class="green-val" placeholder="255" size="10">
+        <input type="text" class="green-val" placeholder="255" size="3">
         <label for="bluev">Blue : </label>
-        <input type="text" class="blue-val" placeholder="255" size="10"> 
+        <input type="text" class="blue-val" placeholder="255" size="3"> 
         <button class="color-converter" id="rgb-hex">CONVERT</button>
         <button class="reset color-converter">RESET</button>
-        <button class="color-converter" onclick="window.location.href='#hextorgb'">Swap</button>
+        <button class="color-converter" onclick="window.location.href='#hextorgb'">SWAP</button>
         <p>The following value corresponds to <span id="hex-value"></span></p>
         <div id="change-col"></div>
         <hr>
@@ -45,7 +53,7 @@
         <input type=text id="hexa" placeholder="#000000">
         <button class="color-converter" id="hex-rgb">CONVERT</button>
         <button class="reset color-converter">RESET</button>
-        <button class="color-converter" onclick="window.location.href='#rgbtohex'">Swap</button>
+        <button class="color-converter" onclick="window.location.href='#rgbtohex'">SWAP</button>
         <p>RGB value is : <span id="red-res"></span> </p>
         <div id="color-chg"></div>
         <hr>

@@ -50,7 +50,7 @@ window.onload=()=> {
         divcolor.innerText=hexTorgb(inputVal.value);
         document.querySelector('#color-chg').style.backgroundColor=divcolor.innerText;
     });
-    const reset=document.querySelectorAll('.reset');
+    const reset=document.querySelector('.reset');
     reset.addEventListener("click",()=>{
         red.value=0;
         green.value=0;
