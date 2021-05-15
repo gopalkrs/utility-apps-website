@@ -12,11 +12,11 @@
 </head>
 <body>
     <header>
-        <h1 class="main-title">Utility Apps</h1>
+        <h1 class="main-title">UTILITY APPS</h1>
         <h1 class="sub-title">RGB-HEX Converters</h1>
     </header>
     <ul>
-        <a href="unitconvertors.html"><li>Unit Converters</li></a>
+        <a href="unitmainpage.html"><li>Unit Converters</li></a>
         <a href="dateconvertor.html"><li>Timestamp Converters</li></a>
         <a href="rgbhex.html"><li>HEX-RGB Converters</li></a>
         <a href="stringutility.html"><li>String Utilities</li></a>
@@ -26,12 +26,18 @@
     <h2 class="type-converter" id="rgbtohex">RGB to HEX</h2>
     <div class="rgbdesign">
        
-        <label for="redv">Red : </label>
-        <input type="text" class="red-val" placeholder="255" size="3">
-        <label for="greenv">Green : </label>
-        <input type="text" class="green-val" placeholder="255" size="3">
-        <label for="bluev">Blue : </label>
-        <input type="text" class="blue-val" placeholder="255" size="3"> 
+        <span>
+            <label for="redv">Red : </label>
+            <input type="text" class="red-val" placeholder="255" size="3">
+        </span>
+        <span>
+            <label for="greenv">Green : </label>
+            <input type="text" class="green-val" placeholder="255" size="3">
+        </span>
+        <span>
+            <label for="bluev">Blue : </label>
+            <input type="text" class="blue-val" placeholder="255" size="3">
+        </span>
         <button class="color-converter" id="rgb-hex">CONVERT</button>
         <button class="reset color-converter">RESET</button>
         <button class="color-converter" onclick="window.location.href='#hextorgb'">SWAP</button>
@@ -66,6 +72,9 @@
             software you will need the RGB values for the hex code. This tool allows you to get those values.
         </p>
     </div>
+    <footer>
+
+    </footer>
 
 
 </body>
