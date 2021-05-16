@@ -125,6 +125,7 @@ header {
     justify-content: center;
     flex-direction: column;
     box-shadow: 1px 1px 5px 5px grey;
+    height: 156px;
 }
 
 
@@ -162,10 +163,7 @@ header {
 input:focus {
     background-color:#fafaf6;
 }
-.connect-me{
-    background-color: #3d6cb9;
-    margin: 0.3em;
-}
+
 .about-me {
     background-color: rgba(255, 255, 255, 0);
     color:#fafaf6;
@@ -358,7 +356,7 @@ a  {
     height: 100%;
     position: fixed;
     left: 0;
-    top: 96px;
+    top: 32px;
     width: 200px;
     margin-top: 60px;
     background-color: rgba(61 , 108 , 185,0.3);
@@ -416,6 +414,7 @@ ul li:hover a{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 0;
+    background-color: #cfeed1;
 }
 @media screen and (max-width: 303px){
     .sub-title {
