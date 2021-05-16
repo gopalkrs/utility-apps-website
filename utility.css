@@ -8,6 +8,12 @@
 h2 {
     color: #21094e;
 }
+img{
+    height: 20%;
+    width: 15%;
+    float: right;
+    background-color: transparent;
+}
 
 #change-col,#color-chg {
     width: 100%;
@@ -41,13 +47,12 @@ h3 {
     font-size: 1.4em;
 }
 .sub-title {
-    margin-left: 1.4em;
+    margin-left: 3.1em;
     background-color: rgba(255, 255, 255, 0);
-    font-size: 2.2em;
+    font-size: 1.6em;
     margin-top: 0.3em;
     color: #cfeed1;
-    padding-bottom: 1em;
-    
+    padding-bottom: 1em;   
 }
 button {
     border-radius: 0.4em;
@@ -116,7 +121,6 @@ select:focus {
 
 header {
     background-image:linear-gradient(to bottom,#21094e,#3d6cb9);
-    height: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -136,7 +140,8 @@ header {
     
 .main-title {
     margin-left: 0.55em;
-    font-size: 5em;
+    font-size: 3em;
+    font-weight: bold;
     background-color: rgba(255, 255, 255, 0);
     color: #fafaf6;
     margin-bottom: 0.2em;
@@ -177,6 +182,7 @@ textarea {
     background-color: #cfeed1;
     height: 10%;
     border-radius: 0.5vw;
+    width: 100%;
 }
 textarea:focus {
     background-color: #fafaf6;
@@ -274,14 +280,7 @@ textarea:focus {
     background-color: #7ec8e3;
 }
 
-img {
-    background-color: rgba(255, 255, 255, 0);
-    width: 210px;
-    height: 210px;
-    position: absolute;
-    left: 84%;
-    bottom: 65%;
-}
+
 
 header#landing-header {
     background-image:linear-gradient(to top,#3d6cb9,#7ec8e3);
@@ -314,63 +313,115 @@ footer p{
         font-size: 1rem;
     }
 }
-@media (min-width:375px) and (max-width:650px){
-    img{
-        width: 110px;
-        height: 103px;
-        position: absolute;
-        left: 70%;
-        bottom: 69%;
-    }
-}
-ul {
+
+/*ul {
     list-style-type: none;
-    background-color: transparent;
+    
     padding:0.02em 0em;
     padding-right: 0em;
     margin-right: 0;
+    border: 1px solid #21094e;
+    width: 58%;
 }
 li {
     display: inline-block;
-    background-color: transparent;
-    padding: 0.6em 0.3em;
-    font-size: 0.7rem;
+    
+    padding: 0.3em 0.3em;
+    font-size: 1rem;
     color: #21094e;
-    border: 1px solid #21094e;
     margin: 0;
+    border-left: 1px solid #21094e;
 }
 a  {
     padding: 0.2em 0em;
-    background-color: transparent;
     color: #fafaf6;
     margin:0;
 }
-li:hover{
-    background-color: #3d6cb9;
-    color: #fafaf6;
-    box-shadow: 1px 1px 3px 3px #21094e;
-    font-weight: bold;
-}
+*/
 
-div.other-convertors {
-    margin: 2em;
+
+.other-converters {
+    margin: 3em;
     border-radius: 0.5em;
     padding: 1.5em;
     box-shadow: 1px 1px 5px 5px #7EC8E3;
-    background-color: black;
+    background-color: #fafaf0;
 }
-.other-convertors p,a{
-    color: blue;
-    display: inline;
+.other-converters a,p{
+    color: #3d6cb9;
+    text-align: center;
+    font-size: 1.3em;
 }
 
-@media screen and (max-width: 373px){
-    img {
-        background-color: rgba(255, 255, 255, 0);
-        width: 105px;
-        height: 109px;
-        position: absolute;
-        left: 62%;
-        bottom: 68%;
+
+#sidebar {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 96px;
+    width: 200px;
+    margin-top: 60px;
+    background-color: rgba(61 , 108 , 185,0.3);
+    padding: 2px 0;
+    transform: translateX(-200px);
+    transition: transform 250ms ease-in-out;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: transparent;
+}
+.menu li a{
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    background-color: transparent;
+}
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    border-top: 1px solid rgba(225, 225, 225, 0.10);
+    background-color: transparent;
+}
+.sidebar-toggle {
+    
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 20;
+    top: 96px;
+    left: 0px;
+    cursor: pointer;
+}
+#open-menu:checked ~ #sidebar{
+    transform: translateX(0);
+}
+ul li:hover{
+    background-color: #3d6cb9;
+}
+ul li:hover a{
+    color: #fafaf6;
+}
+.spinner{
+    width: 24px;
+    height:4px;
+    background-color: black;
+    margin: 3px 4px;
+}
+#head-part-sidebar input{
+    display: none;
+}
+#sidebar h3{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+@media screen and (max-width: 303px){
+    .sub-title {
+        font-size: 1.5rem;
+    }
+    .main-title {
+        font-size: 2rem;
     }
 }
