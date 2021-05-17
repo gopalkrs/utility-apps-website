@@ -1,5 +1,4 @@
 * {
-    background-color:#fafaf6;
     font-family: 'Archivo Narrow', sans-serif;
     margin: 0 0;
     color: #21094e;
@@ -9,9 +8,11 @@ h2 {
     color: #21094e;
 }
 img{
-    height: 20%;
-    width: 15%;
-    float: right;
+    height: 200px;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: transparent;
 }
 
@@ -47,7 +48,7 @@ h3 {
     font-size: 1.4em;
 }
 .sub-title {
-    margin-left: 3.1em;
+    margin-left: 0.8em;
     background-color: rgba(255, 255, 255, 0);
     font-size: 1.6em;
     margin-top: 0.3em;
@@ -105,19 +106,6 @@ option:hover {
 select:focus {
     background-color: #fafaf6;
 }
-.navigator a{
-    display: inline;
-    float: right;
-    background-color: #3d6cb9;
-    color: #cfeed1;
-}
-.navigator{
-    overflow:hidden
-}
- .navigator a:hover {
-    background-color: #7ec8e3;
-    color: #21094e;
-}
 
 header {
     background-image:linear-gradient(to bottom,#21094e,#3d6cb9);
@@ -125,7 +113,7 @@ header {
     justify-content: center;
     flex-direction: column;
     box-shadow: 1px 1px 5px 5px grey;
-    height: 156px;
+    height: 150px;
 }
 
 
@@ -141,19 +129,19 @@ header {
     
 .main-title {
     margin-left: 0.55em;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 2rem;
     background-color: rgba(255, 255, 255, 0);
     color: #fafaf6;
     margin-bottom: 0.2em;
-    padding-top: 0.3em;
+    padding-top: 0.8em;
 }
 .landing-page {
-    margin: 3em 1em;
+    margin: 1em 1em;
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
     font-size: 2.3em;
-    box-shadow: 1px 1px 4px 2px #21094e;
+    display: block;
+    color: #3d6cb9;
 }
 
 
@@ -290,9 +278,11 @@ header#landing-header {
     box-shadow: 1px 1px 3px 3px grey;
 }
 footer {
-    height: 15vh;
+    position: fixed;
     background-color: #3d6cb9;
     padding-bottom: 1em;
+    width: 100vw;
+    bottom: 0px;
 }
 footer p{
     font-size: 0.8em;
@@ -302,10 +292,11 @@ footer p{
 }
 @media screen and (max-width: 750px){
     .main-title {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     .sub-title{
-        font-size: 1.5rem;
+        font-size: 0.5rem;
+        padding: 1.4em;
     }
     .type-converter{
         font-size: 1rem;
@@ -388,8 +379,8 @@ a  {
     height: 22px;
     position: absolute;
     z-index: 20;
-    top: 96px;
-    left: 0px;
+    top: 10px;
+    left: 13px;
     cursor: pointer;
 }
 #open-menu:checked ~ #sidebar{
@@ -404,7 +395,7 @@ ul li:hover a{
 .spinner{
     width: 24px;
     height:4px;
-    background-color: black;
+    background-color: #fafaf6;
     margin: 3px 4px;
 }
 #head-part-sidebar input{
@@ -414,13 +405,10 @@ ul li:hover a{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 0;
-    background-color: #cfeed1;
+    background-color: #fafaf0;
 }
-@media screen and (max-width: 303px){
-    .sub-title {
-        font-size: 1.5rem;
-    }
-    .main-title {
-        font-size: 2rem;
-    }
+.social {
+    background-color: #3d6cb9;
+    display: flex;
+    justify-content: center;
 }
