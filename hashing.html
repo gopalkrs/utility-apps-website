@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/Encoder-Decoder/Hashing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="utility.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="hashingEncDec.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">UTILITY APPS</h1>
+        <h1 class="sub-title">Encoders/Decoders</h1>
+        <div id="head-part-sidebar">
+            <input type="checkbox" id="open-menu">
+            <label for="open-menu" class="sidebar-toggle">
+                <div class="spinner"></div>
+                <div class="spinner"></div>
+                <div class="spinner"></div>
+            </label>
+            <div id="sidebar">
+                <h3>MY MENU</h3>
+                <ul class="menu">
+                    <li><a href="unitmainpage.html">Unit Converters</a></li>
+                    <li><a href="dateconvertor.html">Timestamp Converters</a></li>
+                    <li><a href="rgbhex.html">HEX-RGB Converters</a></li>
+                    <li><a href="stringutility.html">String Utilities</a></li>
+                    <li><a href="numberbase.html">Number Base Converters</a></li>
+                    <li><a href="">Encoder/Decoders</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h2 class="type-converter">MD5 Hashing</h2>
+    <div class="enc-dec-container2">
+        <label for="md-hash">Enter the value : </label>
+        <textarea id="md-hash"></textarea>
+        <button id="md-btn">Convert</button><br>
+        <label for="md-result">Hashed MD5 Value : </label>
+        <textarea id="md-result"></textarea>
+    </div>
+
+    <h2 class="type-converter">SHA1 Hashing</h2>
+    <div class="enc-dec-container2">
+        <label for="sh1-hash">Enter the value : </label>
+        <textarea id="sh1-hash"></textarea>
+        <button id="sh1-btn">Convert</button><br>
+        <label for="sh1-result">Hashed SHA1 Value : </label>
+        <textarea id="sh1-result"></textarea>
+    </div>
+
+    <h2 class="type-converter">SHA256 Hashing</h2>
+    <div class="enc-dec-container2">
+        <label for="sh2-hash">Enter the value : </label>
+        <textarea id="sh2-hash"></textarea>
+        <button id="sh2-btn">Convert</button><br>
+        <label for="sh2-result">Hashed SHA256 Value : </label>
+        <textarea id="sh2-result"></textarea>
+    </div>
+
+    <h2 class="type-converter">SHA512 Hashing</h2>
+    <div class="enc-dec-container2">
+        <label for="sh3-hash">Enter the value : </label>
+        <textarea id="sh3-hash"></textarea>
+        <button id="sh3-btn">Convert</button><br>
+        <label for="sh3-result">Hashed SHA512 Value : </label>
+        <textarea id="sh3-result"></textarea>
+    </div>
+</body>
+</html>

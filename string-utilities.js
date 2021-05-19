@@ -27,6 +27,15 @@ window.onload=()=>{
         }
         return count;
     }
+    let charCount=(strChar)=>{
+        let countVal=0;
+        for(let i=0;i<strChar.length;i++){
+            if(strChar[i]!=0){
+                countVal++;
+            }
+        }
+        return countVal;
+    }
 
     lowerbtn.addEventListener("click",()=>{
         strInput.value=(strInput.value).toLowerCase();
@@ -35,7 +44,7 @@ window.onload=()=>{
         strInput.value=(strInput.value).toUpperCase();
     });
     charbtn.addEventListener("click",()=>{
-        counter.innerText="The character count is "+ (strInput.value).length;
+        counter.innerText="The character count is "+ charCount(strInput.value);
     });
     reversebtn.addEventListener("click",()=>{
         strInput.value=stringReverse(strInput.value);

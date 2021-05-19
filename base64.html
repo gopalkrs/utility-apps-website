@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encoders/Decoders</title>
+    <title>Home/Encoder-Decoder/Base64</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="utility.css">
-    <script src="logics.js"></script>
-    
+    <script src="baseencdec.js"></script>
 </head>
 <body>
     <header>
         <h1 class="main-title">UTILITY APPS</h1>
-        <h1 class="sub-title">Encoders/Decoders</h1>
+        <h1 class="sub-title">Number Base Converters</h1>
         <div id="head-part-sidebar">
             <input type="checkbox" id="open-menu">
             <label for="open-menu" class="sidebar-toggle">
@@ -35,15 +34,16 @@
             </div>
         </div>
     </header>
-    <h2 class="sub-type">URL Encode Decode - URL Percent Encoding and Decoding.</h2>
+
+    <h2 class="type-converter">Base64 Encode/Decode</h2>
     <div class="enc-dec-container2">
-        <label for="url-val">Enter the string : </label>
-        <textarea id="url-val" type="text" cols="20" rows="5"></textarea>
-        <button id="url-enbtn">Encoder</button>
-        <button id="url-debtn">Decoder</button><br>
-        <label for="url-result">Encoded/Decoded Value : </label>
-        <textarea type="text" id="url-result" cols="20" rows="5"></textarea>
-       </div>
+        <label for="base-val">Enter the string : </label>
+        <textarea type="text" id="base-val" cols="20" rows="5"></textarea>
+        <button id="enc-base">Base64Encoder</button>
+        <button id="dec-base">Base64Decoder</button>
+        <br>
+        <label for="base-result">Base64 Encoded/Decoded Value : </label>
+        <textarea type="text" id="base-result" cols="20" rows="5"></textarea>
     </div>
 </body>
 </html>
