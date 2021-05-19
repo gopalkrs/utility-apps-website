@@ -48,6 +48,7 @@ h2,p,#units,#cur{
 h3 {
     background-color: rgba(255, 255, 255, 0);
     font-size: 1.4em;
+
 }
 .sub-title {
     margin-left: 0.8em;
@@ -217,6 +218,7 @@ textarea:focus {
     padding: 1em;
     margin: 3em;
     box-shadow: 1px 1px 5px 5px grey;
+    background-color: #f4d160;
 }
 @media screen and (max-width: 1019px){
     .humanToEpoch{
@@ -320,7 +322,7 @@ footer p{
     background-color: transparent;
 }
 .menu li a{
-    color: #21094e;
+    color: #3d6cb9;
     padding: 5px 10px;
     display: block;
     background-color: transparent;
@@ -360,10 +362,13 @@ ul li:hover a{
     display: none;
 }
 #sidebar h3{
-    text-align: center;
-    margin-bottom: 10px;
+    padding: 4px;
     margin-top: 0;
-    background-color: #fafaf0;
+    background-color: #fafaf6;
+    color: #3d6cb9;
+}
+#sidebar h3:hover{
+    background-color: #3d6cb9;
 }
 .social {
     background-color: #3d6cb9;
@@ -393,4 +398,11 @@ ul li:hover a{
     background-color: #f4d160;
     margin: 20px;
     border-radius: 5px;
+}
+.fa-home{
+    background-color: transparent;
+    color: #f4d160;
+}
+.home-btn {
+    font-weight: bold;
 }
