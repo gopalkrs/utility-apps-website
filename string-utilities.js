@@ -19,10 +19,15 @@ window.onload=()=>{
 
     let wordcount=(str)=>{
         let count=0;
+        let newArray=[" " , "," , "." , "&" , "?"];
         let arrName=str.split(" ");
+        let lengthval=str.split(" ").length;
+        count=lengthval;
         for(let items of arrName){
-            if((items!="  ")||(items!=",")||(items!=".")||(items!="?")(items!="/")(items!="_")(items!="-")(items!="=")){
-                count++;
+            for(let val of newArray){
+                if((items==val)){
+                count--;
+                }
             }
         }
         return count;
@@ -30,7 +35,7 @@ window.onload=()=>{
     let charCount=(strChar)=>{
         let countVal=0;
         for(let i=0;i<strChar.length;i++){
-            if(strChar[i]!=0){
+            if(strChar[i]!=" "){
                 countVal++;
             }
         }

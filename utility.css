@@ -30,14 +30,12 @@ img{
     border-radius: 0.5em;
     margin: 3em;
     padding: 1.5em;
-    box-shadow: 1px 1px 5px 5px grey;
     background-color: #f4d160;
 }
 .hexdesign {
     border-radius: 0.5em;
     margin: 3rem;
     padding: 1.5em;
-    box-shadow: 1px 1px 5px 5px grey;
     background-color: #f4d160;
 }
 
@@ -59,12 +57,11 @@ h3 {
     padding-bottom: 1em;
 }
 button {
-    border-radius: 0.4em;
     background-color: #3d6cb9;
-    padding: 0.3em;
+    padding: 5px;
+    font-size: 14px;
     color: #fafaf6;
-    font-weight: bold;
-    margin: 0.5em;
+    margin: 3px;
 }
 button:active{
     color: black;
@@ -90,7 +87,6 @@ a{
     border-radius: 0.5em;
     margin: 3em;
     padding: 1.5em;
-    box-shadow: 1px 1px 5px 5px #7EC8E3;
     background-color: #f4d160;
 }
 label {
@@ -112,7 +108,7 @@ select:focus {
 }
 
 header {
-    background-image:linear-gradient(to bottom,#21094e,#3d6cb9);
+    background-color:#7843B0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -168,7 +164,7 @@ input:focus {
 }
 textarea {
     resize: none;
-    background-color: #7ec8e3;
+    background-color: #ffe9e3;
     height: 10%;
     border-radius: 5px;
     width: 100%;
@@ -180,7 +176,6 @@ textarea:focus {
     margin: 3em;
     border-radius: 0.3em;
     padding: 1.5em;
-    box-shadow:1px 1px 5px 5px grey;
     background-color: #f4d160;
 }
 #split-char {
@@ -188,12 +183,12 @@ textarea:focus {
 }
 .text-tools-btn {
     display: inline;
-    border-radius: 0.3em;
     background-color: #3d6cb9;
     padding: 0.6em;
     color: #fafaf6;
-    font-weight: bold;
-    margin: 1em;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px;
 }
 .color-converter {
     color: #fafaf6;
@@ -224,7 +219,6 @@ textarea:focus {
     .humanToEpoch{
         padding: 1em;
         margin: 3em;
-        box-shadow: 1px 1px 5px 5px grey;
         display: flex;
         flex-direction: column;
         background-color: #f4d160;
@@ -232,7 +226,6 @@ textarea:focus {
     .epochToHuman{
         padding: 1em;
         margin: 3em;
-        box-shadow: 1px 1px 5px 5px grey;
         display: flex;
         flex-direction: column;
         background-color: #f4d160;
@@ -241,7 +234,6 @@ textarea:focus {
 .epochToHuman {
     padding: 1em;
     margin: 3em;
-    box-shadow: 1px 1px 5px 5px grey;
     background-color: #f4d160;
 }
 
@@ -252,7 +244,6 @@ textarea:focus {
 
 
 header#landing-header {
-    background-image:linear-gradient(to top,#3d6cb9,#7ec8e3);
     height: 20%;
     display: flex;
     justify-content: space-around;
@@ -286,6 +277,9 @@ footer p{
     }
     .sub-type{
         font-size: 0.8rem;
+    }
+    label{
+        display: block;
     }
 }
 
@@ -357,6 +351,7 @@ ul li:hover a{
     height:4px;
     background-color: #fafaf6;
     margin: 3px 4px;
+    border-radius: 5px;
 }
 #head-part-sidebar input{
     display: none;
@@ -401,7 +396,7 @@ ul li:hover a{
 }
 .fa-home{
     background-color: transparent;
-    color: #f4d160;
+    color: #21094e;
 }
 .home-btn {
     font-weight: bold;
