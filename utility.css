@@ -1,11 +1,11 @@
 * {
     font-family: 'Archivo Narrow', sans-serif;
     margin: 0 0;
-    color: #21094e;
+    color: #7843B0;
 }
 
 h2 {
-    color: #21094e;
+    color: #7843B0;
 }
 img{
     height: 200px;
@@ -64,7 +64,7 @@ button {
     margin: 3px;
 }
 button:active{
-    color: black;
+    color: #21094e;
 }
 button:hover{
     background-color: #fafaf6;
@@ -76,7 +76,7 @@ input {
     border-radius: 0.5em;
 }
 p {
-    color: #21094e;
+    color: #7843B0;
     font-size: 1em;
 }
 
@@ -146,7 +146,7 @@ header {
 
 
 .btn-text:active {
-    color: black;
+    color: #21094e;
 }
 input:focus {
     background-color:#fafaf6;
@@ -363,7 +363,7 @@ ul li:hover a{
     color: #3d6cb9;
 }
 #sidebar h3:hover{
-    background-color: #3d6cb9;
+    background-color: #f4d160;
 }
 .social {
     background-color: #3d6cb9;
@@ -396,8 +396,5 @@ ul li:hover a{
 }
 .fa-home{
     background-color: transparent;
-    color: #21094e;
-}
-.home-btn {
-    font-weight: bold;
+    color: #7843B0;
 }
