@@ -212,7 +212,6 @@ textarea:focus {
 .humanToEpoch {
     padding: 1em;
     margin: 3em;
-    box-shadow: 1px 1px 5px 5px grey;
     background-color: #f4d160;
 }
 @media screen and (max-width: 1019px){
@@ -278,9 +277,15 @@ footer p{
     .sub-type{
         font-size: 0.8rem;
     }
+    .rgb-mobile-layout{
+        display: flex;
+        margin: 5px;
+        padding: 5px;
+    }
     label{
         display: block;
     }
+    
 }
 
 
