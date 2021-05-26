@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="stopwatch.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="utility.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <header>
         <h1 class="main-title">UTILITY APPS</h1>
+        <h1 class="sub-title">Stopwatch</h1>
         <div id="head-part-sidebar">
             <input type="checkbox" id="open-menu">
             <label for="open-menu" class="sidebar-toggle">
@@ -23,7 +25,6 @@
             <div id="sidebar">
                 <h3><a href="index.html"><i class="fa fa-home fa-2x"></i><span class="home-btn">HOME</span></a></h3>
                 <ul class="menu">
-                    <li><a href="stopwat.html">Stopwatch</a></li>
                     <li><a href="unitmainpage.html">Unit Converters</a></li>
                     <li><a href="dateconvertor.html">Timestamp Converters</a></li>
                     <li><a href="rgbhex.html">HEX-RGB Converters</a></li>
@@ -34,20 +35,12 @@
             </div>
         </div>
     </header>
-    
-    <img src="project.svg">
-    <section>
-        <h2 class= "landing-page">Welcome to the Utility Apps.</h2>
-    </section>
-    
-    <footer>
-        <p class="about-me">Created By : Gopal Choudhary</p>
-        <p class="about-me">Phone   : +91 9330581606</p>
-        <div class="social">
-        <span class="connect-me"><a href="https://linkedin.com/in/gopal-choudhary-272bb3207" class="fa fa-linkedin connect-me"></a></span>
-        <span class="connect-me"><a href="https://github.com/gopalkrs" class="fa fa-github connect-me"></a></span>
-        <span class="connect-me"><a href="mailto: raunakchd1@gmail.com" class="fa fa-envelope connect-me"></a></span>
-        </div>
-    </footer>
+    <div class="swatch">
+        <input type="text" id="hour" placeholder="00" disabled class="stopwatch" size="1"><span class="mid-dot">:</span>
+        <input type="text" id="min" placeholder="00" disabled class="stopwatch" size="1"><span class="mid-dot">:</span>
+        <input type="text" id="sec" placeholder="00" disabled class="stopwatch" size="1">
+        <br>
+        <button id="start" class="stop-btn"><i class="fa fa-play center"></i></button><button id="stop" class="stop-btn"><i class="fa fa-pause center"></i></button><button id="clear" class="stop-btn"><i class="fa fa-refresh center"></i></button>
+    </div>
 </body>
 </html>
