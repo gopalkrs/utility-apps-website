@@ -45,6 +45,7 @@ window.onload=()=>{
     });
 
     document.querySelector('#clear').addEventListener("click",()=>{
+        clearInterval(interId);
         hour.value=parseInt("00");
         min.value=parseInt("00");
         sec.value=parseInt("00");
