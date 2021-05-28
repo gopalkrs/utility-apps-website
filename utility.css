@@ -31,13 +31,13 @@ img{
     border-radius: 5px;
     margin: 3em;
     padding: 1.5em;
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 .hexdesign {
     border-radius: 5px;
     margin: 3rem;
     padding: 1.5em;
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 
 h2,p,#units,#cur{
@@ -59,14 +59,14 @@ h3 {
     text-align: center;
 }
 button {
-    background-color: #3d6cb9;
+    background-color: #282846;
     padding: 5px;
     font-size: 14px;
     color: #fafaf6;
-    margin: 3px;
+    margin: 5px;
 }
 button:active{
-    color: #21094e;
+    color: black;
 }
 button:hover{
     background-color: #fafaf6;
@@ -86,18 +86,18 @@ p {
 a{
     text-decoration: none;
 }
-.design-unit {
-    border-radius: 0.5em;
+.design-unit,.ip-div {
+    border-radius: 5px;
     margin: 3em;
     padding: 1.5em;
-    background-color: #f4d160;
+    background-color: #cc0000;
     text-align: center;
 }
 label {
     background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
     margin:0.2em;
-    color: #282846;
+    color: #fafaf6;
 } 
 option,select {
     font-family: 'Archivo Narrow', sans-serif;
@@ -129,6 +129,7 @@ header {
     background-color: rgba(255, 255, 255, 0);
     text-decoration: underline;
     font-size: 1.5rem;
+    color: #282846;
 }
 
     
@@ -179,9 +180,9 @@ textarea:focus {
 }
 .string-utilities-block {
     margin: 3em;
-    border-radius: 0.3em;
+    border-radius: 5px;
     padding: 1.5em;
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 #split-char {
     width: 15px;
@@ -204,7 +205,7 @@ textarea:focus {
 }
 
 .enc-dec-container2{
-    background-color: #f4d160;
+    background-color: #cc0000;
     border-radius: 5px;
     margin: 30px;
     padding: 20px;
@@ -216,7 +217,8 @@ textarea:focus {
 .humanToEpoch {
     padding: 20px;
     margin: 3em;
-    background-color: #f4d160;
+    background-color: #cc0000;
+    border-radius: 5px;
 }
 @media screen and (max-width: 1019px){
     .humanToEpoch{
@@ -224,20 +226,18 @@ textarea:focus {
         margin: 3em;
         display: flex;
         flex-direction: column;
-        background-color: #f4d160;
     }
     .epochToHuman{
         padding: 1em;
         margin: 3em;
         display: flex;
         flex-direction: column;
-        background-color: #f4d160;
     }
 }
 .epochToHuman {
     padding: 1em;
     margin: 3em;
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 
 .date-input-fields {
@@ -297,7 +297,7 @@ footer p{
     margin: 20px;
     border-radius: 5px;
     padding: 1em;
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 .other-converters a,p{
     color: #282846;
@@ -375,7 +375,7 @@ ul li:hover a{
     color: #3d6cb9;
 }
 #sidebar h3:hover{
-    background-color: #f4d160;
+    background-color: #cc0000;
 }
 .social {
     background-color: #3d6cb9;
@@ -398,12 +398,12 @@ ul li:hover a{
 .links-utility ul li{
     font-size: 1.4rem;
     padding: 5px;
-    border: 2px solid #282846;
+    border: 2px solid #fafaf6;
     margin: 8px;
     text-align: center;
 }
 .select-utility {
-    background-color: #f4d160;
+    background-color: #cc0000;
     margin: 20px;
     border-radius: 5px;
 }
@@ -412,7 +412,7 @@ ul li:hover a{
     color: #7843B0;
 }
 .swatch{
-    background-color: #f4d160;
+    background-color: #cc0000;
     border-radius: 5px;
     margin: 60px 30px;
     padding: 80px 20px;
@@ -427,12 +427,13 @@ ul li:hover a{
 }
 .mid-dot{
     font-size: 40px;
+    color: #fafaf6;
 }
 .stop-btn{
-    font-size: 30px;
-    border-radius: 50%;
-    padding: 10px 15px;
-    margin: 10px;
+    font-size: 20px;
+    border-radius: 48%;
+    padding: 15px;
+    margin: 20px 10px;
     background-color: #3d6cb9;
     box-shadow: 1px 1px 2px 2px grey;
 }
@@ -451,9 +452,34 @@ ul li:hover a{
     .stop-btn{
         font-size: 10px;
         padding: 5px;
-        margin: 5px;
+        margin: 10px 7px;
     }
     .mid-dot{
         font-size: 10px;
     }
 }
+.ip-div {
+    border-radius: 5px;
+    margin: 50px 20px;
+    padding: 15px;
+    background-color: #cc0000;
+    text-align: center;
+    height: 100px;
+}
+#know-ip{
+    background-color: #282846;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px #fafaf6;
+}
+#know-ip:hover{
+    background-color: #3d6cb9;
+    color: #fafaf6;
+}
+@media screen and (max-width: 280px){
+    .ip-div {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
