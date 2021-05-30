@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="stopwatch.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="utility.css">
+    <title>Home/FunTranslations</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="funtransl.js" type="text/javascript"></script>
 <body>
     <header>
         <h1 class="main-title">UTILITY APPS</h1>
-        <h1 class="sub-title">Stopwatch</h1>
+        <h1 class="sub-title">Fun Translations</h1>
         <div id="head-part-sidebar">
             <input type="checkbox" id="open-menu">
             <label for="open-menu" class="sidebar-toggle">
@@ -25,7 +24,6 @@
             <div id="sidebar">
                 <h3><a href="index.html"><i class="fa fa-home fa-2x"></i><span class="home-btn">HOME</span></a></h3>
                 <ul class="menu">
-                    <li><a href="stopwat.html">Stopwatch</a></li>
                     <li><a href="unitmainpage.html">Unit Converters</a></li>
                     <li><a href="dateconvertor.html">Timestamp Converters</a></li>
                     <li><a href="rgbhex.html">HEX-RGB Converters</a></li>
@@ -36,22 +34,18 @@
             </div>
         </div>
     </header>
-    <div class="swatch">
-        <div class="stopwatch-flex">
+    <h2 class="type-converter">Pirate Speak translator</h2>
+    <section class="translator">
+        <p>Welcome to translation for English to Pirate speak. Ahoy Shiver me timbers! I be needin' t' send 'em
+         all to Davy Jones' locker. Arrrrr! Anyway go ahead and translate and have some fun! &#128512 &#9760</p><br>
+        <div class="translator-flex">
+            <textarea id='trans-inp' rows="5" cols="40"></textarea>
             <div>
-            <label for="hour">Hour</label><br>
-            <input type="text" id="hour" placeholder="00" disabled class="stopwatch" size="1"><span class="mid-dot">:</span>
+            <button id="trans-btn">Translate</button><br>
+            <button id="clear-btn">Clear</button>
             </div>
-            <div>
-            <label for="min">Min</label><br>
-            <input type="text" id="min" placeholder="00" disabled class="stopwatch" size="1"><span class="mid-dot">:</span>
-            </div>
-            <div>
-            <label for="sec">Sec</label><br>
-            <input type="text" id="sec" placeholder="00" disabled class="stopwatch" size="1">
-            </div>
+            <textarea id="trans-res" rows="5" disabled cols="40"></textarea>
         </div>
-        <button id="start" class="stop-btn"><i class="fa fa-play center"></i></button><button id="stop" class="stop-btn"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></button><button id="clear" class="stop-btn"><i class="fa fa-refresh center"></i></button>
-    </div>
+    </section>
 </body>
 </html>

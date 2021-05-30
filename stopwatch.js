@@ -2,6 +2,7 @@ window.onload=()=>{
     let hour=document.querySelector('#hour');
     let min=document.querySelector('#min');
     let sec=document.querySelector('#sec');
+    let interId;
 
     document.querySelector('#start').addEventListener("click",()=>{
         document.querySelector('#start').disabled=true;
@@ -49,5 +50,6 @@ window.onload=()=>{
         hour.value=parseInt("00");
         min.value=parseInt("00");
         sec.value=parseInt("00");
+        document.querySelector('#start').disabled=false;
     });
 }
