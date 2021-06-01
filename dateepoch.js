@@ -1,57 +1,30 @@
 window.onload=()=>{
-    const epochVal=document.querySelector('#epoch-val');
-    const convertBtn=document.querySelector('#epoch-date')
-    let epochDate=new Date(epochVal.value*1000);
-    let monthVal=epochDate.getMonth()+1;
-    let temp;
+    let epochVal=document.querySelector('#epoch-val');
+    const convertBtn=document.querySelector('#epoch-date');
+    let epochDate=(epoch)=>new Date(epoch*1000);
 
-    const monthName=(month)=> {
-        if(month==1){
-            temp='January';
-        }
-        if(month==2){
-            temp='February';
-        }
-        if(month==3){
-            temp='March';
-        }
-        if(month==4){
-            temp='April';
-        }
-        if(month==5){
-            temp='May';
-        }
-        if(month==6){
-            temp='June';
-        }
-        if(month==7){
-            temp='July';
-        }
-        if(month==8){
-            temp='August';
-        }
-        if(month==9){
-            temp='September';
-        }
-        if(month==10){
-            temp='October';
-        }
-        if(month==11){
-            temp='November';
-        }
-        if(month==12){
-            temp='December';
-        }
-        return temp;
-    }
-
+    let setInt=setInterval(() => {
+        document.querySelector('#current-epoch').innerText=Math.floor(new Date().getTime()/1000.0);
+    }, 1000);
     convertBtn.addEventListener("click",()=>{
-        document.querySelector('#date').value=epochDate.getDate();
-        document.querySelector('#month').value=monthName(monthVal);
-        document.querySelector('#year').value=epochDate.getFullYear();
-        document.querySelector('#hour').value=epochDate.getHours();
-        document.querySelector('#minutes').value=epochDate.getMinutes();
+        document.querySelector('#date').value=epochDate(epochVal.value).getDate();
+        document.querySelector('#month').value=epochDate(epochVal.value).getMonth()+1;
+        document.querySelector('#year').value=epochDate(epochVal.value).getFullYear();
+        document.querySelector('#hour').value=epochDate(epochVal.value).getHours();
+        document.querySelector('#minutes').value=epochDate(epochVal.value).getMinutes();
     });
+
+    document.querySelector('#current-epoch-div').addEventListener("mouseover",()=>{
+        clearInterval(setInt);
+        document.querySelector('#current-epoch-div').style.backgroundColor="#404040"
+    });
+    document.querySelector('#current-epoch-div').addEventListener("mouseout",()=>{
+        setInt=setInterval(() => {
+            document.querySelector('#current-epoch').innerText=Math.floor(new Date().getTime()/1000.0);
+        }, 1000);
+        document.querySelector('#current-epoch-div').style.backgroundColor="#000000"
+    });
+    
 
 
     const epochDateBtn=document.querySelector('#human-date');
@@ -62,12 +35,13 @@ window.onload=()=>{
     const minute=document.querySelector('#minutes2');
 
 
-    newEpoch=new Date(year.value,(monthInput.value-1),dat.value,hour.value,minute.value);
+    let newEpoch=new Date(year.value,(monthInput.value-1),dat.value,hour.value,minute.value);
     epochDateBtn.addEventListener("click",()=>{
         document.querySelector('#epoch').value=newEpoch.getTime()/1000;
     });
 
-
-
+    let setDate=setInterval(() => {
+        document.querySelector('#current-date').innerHTML=new Date().getDate() + "-" +(new Date().getMonth()+1)+ "-"+new Date().getFullYear() + "<br>"+new Date().getHours() +":" + new Date().getMinutes()+":"+new Date().getSeconds();
+    }, 1000);
 
 }

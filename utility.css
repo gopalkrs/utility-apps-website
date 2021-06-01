@@ -58,7 +58,7 @@ h3 {
     text-align: center;
 }
 button {
-    background-color: #7843b0;
+    background-color: #3d6cb9;
     padding: 5px;
     font-size: 14px;
     color: #fafaf6;
@@ -73,9 +73,9 @@ button:hover{
 }
 input {
     background-color: #ffe9e3;
-    padding: 0.3em;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 18px;
 }
 p {
     color: #fafaf6;
@@ -127,7 +127,7 @@ header {
     background-color: rgba(255, 255, 255, 0);
     text-decoration: underline;
     font-size: 1.5rem;
-    color: #282846;
+    color: #000000;
 }
 
     
@@ -146,12 +146,12 @@ header {
     background-color: rgba(255, 255, 255, 0);
     font-size: 2.3em;
     display: block;
-    color: #3d6cb9;
+    color: #000000;
 }
 
 
 .btn-text:active {
-    color: #21094e;
+    color: #000000;
 }
 input:focus {
     background-color:#fafaf6;
@@ -202,7 +202,7 @@ textarea:focus {
 }
 .color-converter:hover {
     background-color: #f2f2f0;
-    color: #272e4f;
+    color: #282846;
 }
 
 .enc-dec-container2{
@@ -305,12 +305,12 @@ footer p{
     background-color: #cc0000;
 }
 .other-converters a{
-    color: #282846;
+    color: #000000;
     text-align: center;
     font-size: 1.3em;
 }
 .other-converters p{
-    color: #282846;
+    color: #000000;
     text-align: center;
     font-size: 1.3em;
 }
@@ -318,12 +318,12 @@ footer p{
 
 #sidebar {
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 200px;
     margin-top: 0px;
-    background-color: #282846;
+    background-color: #000000;
     padding: 0px 0;
     transition: transform 250ms ease-in-out;
     transform: translateX(-200px);
@@ -537,12 +537,12 @@ ul li:hover a{
 }
 
 .utility-box {
-    width: 150px;
-    background-color: #ff9f1c;
+    width: 140px;
+    background-color: #282846;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
-    height: 160px;
+    height: 150px;
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 1px 1px 5px 1px #404040;
@@ -553,6 +553,9 @@ ul li:hover a{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     margin: 10px;
+}
+.utility-apps-div h4{
+    color: #fafaf6;
 }
 @media screen and (max-width:1053px){
     .utility-apps-div{

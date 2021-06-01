@@ -2,17 +2,17 @@ window.onload=()=>{
     let textVal=document.querySelector('#trans-inp');
     let pirate=document.querySelector('#trans-res');
 
-    getFunTranslations=(text)=>{
-        return 'https://api.funtranslations.com/translate/pirate.json?'+ 'text='+ text;
+    getTranslations=(text)=>{
+        return 'https://api.mymemory.translated.net/get?'+ 'q='+ text + '&langpair=en|it';
     }
     document.querySelector('#trans-btn').addEventListener("click",()=>{
-        fetch(getFunTranslations(textVal.value))
+        fetch(getTranslations(textVal.value))
         .then((response)=>{
             return response.json();
         })
         .then((data)=>{
-            pirate.value=data.contents.translated;
-            console.log(data);
+            pirate.value=data.responseData.translatedText;
+            console.log(data.responseData.translatedText);
         });
     });
     document.querySelector('#clear-btn').addEventListener("click",()=>{
