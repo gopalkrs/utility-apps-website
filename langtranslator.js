@@ -12,7 +12,6 @@ window.onload=()=>{
         })
         .then((data)=>{
             pirate.value=data.responseData.translatedText;
-            console.log(data.responseData.translatedText);
         });
     });
     document.querySelector('#clear-btn').addEventListener("click",()=>{

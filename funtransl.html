@@ -24,6 +24,7 @@
             <div id="sidebar">
                 <h3><a href="index.html"><i class="fa fa-home fa-2x"></i><span class="home-btn">HOME</span></a></h3>
                 <ul class="menu">
+                    <li><a href="timer.html">Timer</a></li>
                     <li><a href="langtranslator.html">Language Translations</a></li>
                     <li><a href="funtransl.html">Fun Translations</a></li>
                     <li><a href="Ipnumber.html">IP Address</a></li>  
@@ -43,12 +44,18 @@
         <p>Welcome to translation for English to Pirate speak. Ahoy Shiver me timbers! I be needin' t' send 'em
          all to Davy Jones' locker. Arrrrr! Anyway go ahead and translate and have some fun! &#128512 &#9760</p><br>
         <div class="translator-flex">
-            <textarea id='trans-inp' rows="5" cols="40"></textarea>
+            <div>
+                <label for="trans-inp">Write some text </label><br>
+                <textarea id='trans-inp' rows="8" cols="35"></textarea>
+            </div>
             <div>
             <button id="trans-btn">Translate</button><br>
             <button id="clear-btn">Clear</button>
             </div>
-            <textarea id="trans-res" rows="5" disabled cols="40"></textarea>
+            <div>
+                <label for="trans-res">Pirate Translated</label><br>
+                <textarea id="trans-res" rows="8" disabled cols="35"></textarea>
+            </div>
         </div>
     </section>
 </body>

@@ -25,6 +25,7 @@
             <div id="sidebar">
                 <h3><a href="index.html"><i class="fa fa-home fa-2x"></i><span class="home-btn">HOME</span></a></h3>
                 <ul class="menu">
+                    <li><a href="timer.html">Timer</a></li>
                     <li><a href="funtransl.html">Language Translations</a></li>
                     <li><a href="funtransl.html">Fun Translations</a></li>
                     <li><a href="Ipnumber.html">IP Address</a></li>  
@@ -42,12 +43,18 @@
     <section class="translator">
         <p> </p><br>
         <div class="translator-flex">
-            <textarea id='trans-inp' rows="5" cols="40"></textarea>
+            <div>
+                <label for="trans-inp">Write some text </label><br>
+                <textarea id='trans-inp' rows="8" cols="35"></textarea>
+            </div>
             <div>
             <button id="trans-btn">Translate</button><br>
             <button id="clear-btn">Clear</button>
             </div>
-            <textarea id="trans-res" rows="5" disabled cols="40"></textarea>
+            <div>
+                <label for="trans-res">Translated Language</label><br>
+                <textarea id="trans-res" rows="8" disabled cols="35"></textarea>
+            </div>
         </div>
     </section>
     
