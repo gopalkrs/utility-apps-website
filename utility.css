@@ -8,8 +8,8 @@ h2 {
     color: #7843B0;
 }
 img{
-    height: 200px;
-    width: 180px;
+    height: 300px;
+    width: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -542,14 +542,16 @@ ul li:hover a{
 
 .utility-box {
     width: 140px;
-    background-color: #282846;
+    background-color: #000000;
     padding: 10px;
     margin: 20px;
-    border-radius: 5px;
     height: 150px;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 1px 1px 5px 1px #404040;
+    border-radius: 10px;
+}
+.utility-box:hover{
+    box-shadow: 2px 2px 5px 3px #404040;
 }
 .utility-apps-div {
     display: grid;
@@ -604,5 +606,15 @@ ul li:hover a{
         height: 100px;
     }
 }
-
+.fas {
+    font-size: 60px;
+    color: #3d6cb9;
+    margin-top: 30px;
+}
+@media screen and (max-width:559px){
+    .fas {
+        margin-top: 8px;
+        font-size: 50px
+    }
+}
 
