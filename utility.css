@@ -10,9 +10,7 @@ h2 {
 img{
     height: 300px;
     width: 280px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 40px;
     background-color: transparent;
 }
 
@@ -142,14 +140,38 @@ header {
     text-align: center;
 }
 .landing-page {
-    margin: 1em 1em;
-    text-align: center;
     background-color: rgba(255, 255, 255, 0);
-    font-size: 2.3em;
+    font-size: 25px;
     display: block;
     color: #000000;
+    margin-left: 45px;
 }
-
+.homepage-caption-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7EC8E3;
+}
+@media screen and (max-width:580px){
+    .landing-page {
+        font-size: 15px;
+    }
+    img {
+        width: 170px;
+    }
+}
+@media screen and (max-width:380px){
+    .homepage-caption-image {
+        justify-content: flex-end;
+    }
+    img {
+        margin-right: 10px;
+    }
+    .landing-page {
+        margin-left: 25px;
+    }
+}
 
 .btn-text:active {
     color: #000000;
