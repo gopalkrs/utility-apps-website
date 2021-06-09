@@ -149,9 +149,9 @@ header {
 .homepage-caption-image {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
     align-items: center;
-    background-color: #7EC8E3;
 }
 @media screen and (max-width:580px){
     .landing-page {
@@ -180,13 +180,18 @@ input:focus {
     background-color:#fafaf6;
 }
 
-.about-me {
+.made-by-me {
     background-color: rgba(255, 255, 255, 0);
     color:#fafaf6;
     text-align: center;
+    border-top: 1px solid rgba(225, 225, 225, 0.10);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 12px;
 }
 .connect-me {
-    padding: 5px;
+    margin: 10px 20px;
 }
 .fa {
     color: #fafaf6;
@@ -280,9 +285,7 @@ header#landing-header {
     box-shadow: 1px 1px 3px 3px grey;
 }
 footer {
-    background-color: #3d6cb9;
-    padding-bottom: 1em;
-    width: 100vw;
+    background-color: #000000;
     bottom: 0px;
 }
 footer p{
@@ -318,6 +321,9 @@ footer p{
     }
     .translator textarea{
         font-size: 12px;
+    }
+    .homepage-caption-image {
+        gap: 50px;
     }
 }
 
@@ -405,9 +411,10 @@ ul li:hover a{
     background-color: #debad6;
 }
 .social {
-    background-color: #3d6cb9;
+    background-color: #000000;
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 .links-utility ul{
     list-style-type: none;
@@ -493,6 +500,9 @@ ul li:hover a{
     }
     .mid-dot{
         font-size: 18px;
+    }
+    .homepage-caption-image {
+        gap: 25px;
     }
 }
 .ip-div {
@@ -617,6 +627,9 @@ ul li:hover a{
         width: 70px;
         height: 100px;
     }
+    .homepage-caption-image {
+        gap: 5px;
+    }
 }
 .fas {
     font-size: 60px;
@@ -629,4 +642,3 @@ ul li:hover a{
         font-size: 50px
     }
 }
-
